@@ -30,6 +30,7 @@ const checkwin = () => {
       document.querySelector(".info").innerText =
         boxtext[e[0]].innerText + " Won";
       isover = true;
+      gameover.play();
       document.querySelector(".imagebox").getElementsByTagName("img")[0].style.width = "200px";
     }
   });
